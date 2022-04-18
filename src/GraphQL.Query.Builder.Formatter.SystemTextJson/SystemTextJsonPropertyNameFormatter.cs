@@ -17,11 +17,9 @@ public static class SystemTextJsonPropertyNameFormatter
         }
 
         JsonPropertyNameAttribute attribute = property.GetCustomAttribute<JsonPropertyNameAttribute>();
-        if (!string.IsNullOrEmpty(attribute?.Name))
-        {
-            return attribute.Name;
-        }
-
-        return property.Name;
+        
+        return string.IsNullOrEmpty(attribute?.Name)
+            ? property.Name
+            : attribute.Name;
     };
 }

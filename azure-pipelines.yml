@@ -12,7 +12,6 @@ trigger:
       - master
   paths:
     exclude:
-      - docs/*
       - README.md
 
 steps:
@@ -27,10 +26,10 @@ steps:
   - script: dotnet build -c $(buildConfiguration)
     displayName: 'Build'
 
-  - script: dotnet test --no-build -c $(buildConfiguration) --logger xunit -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:Exclude="[*]Shared.Models.*"
+  - script: dotnet test --no-build -c $(buildConfiguration) --logger xunit -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura
     displayName: 'Test'
 
-  - script: dotnet pack ./src/GraphQL.Query.Builder/GraphQL.Query.Builder.csproj --no-build -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)/out -p:Version=$(GitVersion.SemVer)
+  - script: dotnet pack ./src/GraphQL.Query.Builder.Formatter.SystemTextJson/GraphQL.Query.Builder.Formatter.SystemTextJson.csproj --no-build -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)/out -p:Version=$(GitVersion.SemVer)
     displayName: 'Pack'
 
   - task: PublishTestResults@2
@@ -49,6 +48,5 @@ steps:
       summaryFileLocation: '**/Cobertura.xml'
 
   - publish: $(Build.ArtifactStagingDirectory)/out
-    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
     artifact: out
     displayName: Publish artifact

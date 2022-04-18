@@ -6,7 +6,7 @@ A System.Text.Json property name formatter for [GraphQL.Query.Builder](https://g
 
 This formatter returns the [JsonPropertyNameAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute) value.
 
-[![Build Status](https://dev.azure.com/charlesdevandiere/charlesdevandiere/_apis/build/status/charlesdevandiere.graphql-query-builder-formatter-systemtextjson?branchName=master)](https://dev.azure.com/charlesdevandiere/charlesdevandiere/_build/latest?definitionId=3&branchName=master)
+[![Build Status](https://dev.azure.com/charlesdevandiere/charlesdevandiere/_apis/build/status/charlesdevandiere.graphql-query-builder-formatter-systemtextjson?branchName=master)](https://dev.azure.com/charlesdevandiere/charlesdevandiere/_build/latest?definitionId=7&branchName=master)
 ![Coverage](https://img.shields.io/azure-devops/coverage/charlesdevandiere/charlesdevandiere/7/master)
 [![Nuget](https://img.shields.io/nuget/v/GraphQL.Query.Builder.Formatter.SystemTextJson.svg?color=blue&logo=nuget)](https://www.nuget.org/packages/GraphQL.Query.Builder.Formatter.SystemTextJson)
 [![Downloads](https://img.shields.io/nuget/dt/GraphQL.Query.Builder.Formatter.SystemTextJson.svg?logo=nuget)](https://www.nuget.org/packages/GraphQL.Query.Builder.Formatter.SystemTextJson)
@@ -14,7 +14,7 @@ This formatter returns the [JsonPropertyNameAttribute](https://docs.microsoft.co
 ## Install
 
 ```console
-> dotnet add package GraphQL.Query.Builder.Formatter.SystemTextJson
+dotnet add package GraphQL.Query.Builder.Formatter.SystemTextJson
 ```
 
 ## Usage

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E80FC68-7332-4B19-B23E-BC0501F345F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Query.Builder.Formatter.SystemTextJson", "src\GraphQL.Query.Builder.Formatter.SystemTextJson\GraphQL.Query.Builder.Formatter.SystemTextJson.csproj", "{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CC62B0F8-D216-4C47-8758-B2F5BA89725C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Query.Builder.Formatter.SystemTextJson.UnitTests", "tests\GraphQL.Query.Builder.Formatter.SystemTextJson.UnitTests\GraphQL.Query.Builder.Formatter.SystemTextJson.UnitTests.csproj", "{5F389EBC-CFA1-42E7-9F11-17C8C315326F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F389EBC-CFA1-42E7-9F11-17C8C315326F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F389EBC-CFA1-42E7-9F11-17C8C315326F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F389EBC-CFA1-42E7-9F11-17C8C315326F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F389EBC-CFA1-42E7-9F11-17C8C315326F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AD37E9E-3617-441B-A5DC-79AB15ACF8DA} = {2E80FC68-7332-4B19-B23E-BC0501F345F7}
+		{5F389EBC-CFA1-42E7-9F11-17C8C315326F} = {CC62B0F8-D216-4C47-8758-B2F5BA89725C}
+	EndGlobalSection
+EndGlobal
