@@ -10,8 +10,8 @@
     <Copyright>© 2022 Charles de Vandière</Copyright>
     <Product>GraphQL.Query.Builder.Formatter.SystemTextJson</Product>
     <Title>GraphQL.Query.Builder.Formatter.SystemTextJson</Title>
-    <Description>A property name formatter for GraphQL.Query.Builder.</Description>
-    <Summary>A property name formatter for GraphQL.Query.Builder.</Summary>
+    <Description>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Description>
+    <Summary>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Summary>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl>https://raw.githubusercontent.com/charlesdevandiere/graphql-query-builder-dotnet-systemtextjson/master/logo.png</PackageIconUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
