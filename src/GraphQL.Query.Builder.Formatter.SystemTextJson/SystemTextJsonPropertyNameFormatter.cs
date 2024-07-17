@@ -9,7 +9,7 @@ public static class SystemTextJsonPropertyNameFormatter
 {
     /// <summary>Return the JsonPropertyNameAttribute value if exist.</summary>
     /// <value>The property.</value>
-    public static Func<PropertyInfo, string> Format = property =>
+    public static readonly Func<PropertyInfo, string> Format = property =>
     {
         if (property is null)
         {
@@ -17,7 +17,7 @@ public static class SystemTextJsonPropertyNameFormatter
         }
 
         JsonPropertyNameAttribute attribute = property.GetCustomAttribute<JsonPropertyNameAttribute>();
-        
+
         return string.IsNullOrEmpty(attribute?.Name)
             ? property.Name
             : attribute.Name;
