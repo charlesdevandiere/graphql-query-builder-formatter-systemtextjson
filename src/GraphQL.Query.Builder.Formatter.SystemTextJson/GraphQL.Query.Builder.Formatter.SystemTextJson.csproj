@@ -7,7 +7,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <Authors>Charles de Vandière</Authors>
-    <Copyright>© 2023 Charles de Vandière</Copyright>
+    <Copyright>© 2024 Charles de Vandière</Copyright>
     <Product>GraphQL.Query.Builder.Formatter.SystemTextJson</Product>
     <Title>GraphQL.Query.Builder.Formatter.SystemTextJson</Title>
     <Description>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Description>
@@ -38,8 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
-    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
 
 </Project>
