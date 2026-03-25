@@ -3,11 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Version>0.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <Authors>Charles de Vandière</Authors>
-    <Copyright>© 2024 Charles de Vandière</Copyright>
+    <Copyright>© 2026 Charles de Vandière</Copyright>
     <Product>GraphQL.Query.Builder.Formatter.SystemTextJson</Product>
     <Title>GraphQL.Query.Builder.Formatter.SystemTextJson</Title>
     <Description>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Description>
@@ -38,8 +39,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
-    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.201" PrivateAssets="all" />
+    <PackageReference Include="System.Text.Json" Version="10.0.5" />
   </ItemGroup>
 
 </Project>
