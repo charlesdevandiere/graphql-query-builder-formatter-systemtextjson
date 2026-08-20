@@ -11,16 +11,16 @@
     <Copyright>© 2026 Charles de Vandière</Copyright>
     <Product>GraphQL.Query.Builder.Formatter.SystemTextJson</Product>
     <Title>GraphQL.Query.Builder.Formatter.SystemTextJson</Title>
-    <Description>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Description>
-    <Summary>A property name formatter for GraphQL.Query.Builder based on Newtonsoft.Json.</Summary>
+    <Description>A property name formatter for GraphQL.Query.Builder based on System.Text.Json.</Description>
+    <Summary>A property name formatter for GraphQL.Query.Builder based on System.Text.Json.</Summary>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/charlesdevandiere/graphql-query-builder-dotnet-systemtextjson/master/logo.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/charlesdevandiere/graphql-query-builder-formatter-systemtextjson/master/logo.png</PackageIconUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://charlesdevandiere.github.io/graphql-query-builder-dotnet-systemtextjson</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/charlesdevandiere/graphql-query-builder-formatter-systemtextjson</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>graphql</PackageTags>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/charlesdevandiere/graphql-query-builder-dotnet-systemtextjson</RepositoryUrl>
+    <RepositoryUrl>https://github.com/charlesdevandiere/graphql-query-builder-formatter-systemtextjson</RepositoryUrl>
     
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -28,7 +28,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
@@ -39,8 +39,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.201" PrivateAssets="all" />
-    <PackageReference Include="System.Text.Json" Version="10.0.5" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.400" PrivateAssets="all" />
+    <PackageReference Include="System.Text.Json" Version="10.0.11" />
   </ItemGroup>
 
 </Project>
